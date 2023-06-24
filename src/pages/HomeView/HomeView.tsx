@@ -1,7 +1,9 @@
-import { FC } from 'react';
+import { ReactElement } from 'react';
 
-const HomeView: FC = () => {
-  return <h1>Home</h1>;
+type HomeViewProps = { title: string };
+
+const HomeView = ({ title }: HomeViewProps): ReactElement => {
+  return <h1>{title}</h1>;
 };
 
 export default HomeView;
